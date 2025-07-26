@@ -42,12 +42,12 @@ const ContactSection: React.FC = () => {
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone",
-      details: ["+92-42-99203801-9", "Office Hours: 9:00 AM - 5:00 PM"]
+      details: ["(042) 99203801", "Office Hours: 9:00 AM - 5:00 PM"]
     },
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      details: ["vc@lcwu.edu.pk", "info@lcwu.edu.pk"]
+      details: ["vc.office@lcwu.edu.pk", "info@lcwu.edu.pk"]
     },
     {
       icon: <Clock className="h-6 w-6 text-primary" />,

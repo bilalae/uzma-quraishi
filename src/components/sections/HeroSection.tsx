@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Award, Users, BookOpen } from 'lucide-react';
-import heroImage from '@/assets/prof-uzma-quraishi.jpg';
+import heroImage from '@/assets/prof-uzma-quraishi.png';
 
 interface HeroSectionProps {
   onSectionChange: (section: string) => void;
@@ -22,7 +22,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onSectionChange }) => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
+          <h1 className="text-5xl mt-44 md:mt-0 md:text-7xl font-bold mb-6 text-foreground">
             Prof. Dr. <span className="text-primary">Uzma Quraishi</span>
           </h1>
           

@@ -6,28 +6,31 @@ import { Quote, Calendar, PlayCircle, Download } from 'lucide-react';
 const SpeechesSection: React.FC = () => {
   const speeches = [
     {
-      title: "Women's Economic Empowerment in Higher Education",
-      date: "July 2024",
-      venue: "Policy and Parliamentarians' Forum - LCWU",
-      excerpt: "Education is not just about acquiring knowledge; it's about transforming lives and communities. When we empower women through education, we create ripple effects that benefit entire societies.",
-      type: "Keynote Address",
-      duration: "25 minutes"
+    title: "Youm‑e‑Tashakur Ceremony at LCWU",
+    date: "May 2025",
+    venue: "Lahore College for Women University",
+    excerpt: "The students, faculty, and the entire nation are grateful to the Government of Pakistan and our brave Armed Forces for their historic victory against India.",
+    type: "Commemoration",
+    link: "https://www.youtube.com/watch?v=qv7urLxSpLo",
+    duration: "58 minutes"
     },
     {
-      title: "The Future of Higher Education in Pakistan",
-      date: "June 2024",
-      venue: "USAID HESSA Summit - Islamabad",
-      excerpt: "As educators, we must embrace innovation while preserving the values that define our cultural identity. The future belongs to institutions that can bridge tradition with transformation.",
-      type: "Panel Discussion",
-      duration: "45 minutes"
+      title: "Launching of Punjab Lifesavers Initiative from Lahore College for Women University",
+      date: "September 2024",
+      venue: "Auditorium, Lahore College for Women University",
+      excerpt: "We are honored that LCWU has been selected for launching of this historic initiative.",
+      type: "Launch Ceremony",
+      link: "https://www.youtube.com/watch?v=LaZoEzUhZgk&si=ZuU7P6Y6VnhRP9j5",
+      duration: "1 hour and 9 minutes"
     },
     {
-      title: "Building Resilient Educational Systems",
-      date: "March 2024",
-      venue: "International Education Conference",
-      excerpt: "Resilience in education means creating systems that can adapt, evolve, and thrive in the face of challenges. It means preparing our students not just for the jobs of today, but for the challenges of tomorrow.",
-      type: "Featured Speech",
-      duration: "30 minutes"
+      title: "20th Convocation Ceremony at LCWU",
+      date: "May 2025",
+      venue: "LCWU Auditorium",
+      excerpt: "I express profound gratitude to the Chancellor, Pro‑Chancellor, Government of Punjab, alumni, faculty and staff for their invaluable support and for empowering our students through transformative education.",
+      type: "Convocation Ceremony",
+      link: "https://www.youtube.com/watch?v=p7RHLf5Rl2c",
+      duration: "1 hour and 4 minutes"
     }
   ];
 
@@ -45,7 +48,7 @@ const SpeechesSection: React.FC = () => {
       content: "Excellence is not a destination but a journey of continuous improvement. We strive to create an environment where every student can discover their passion, develop their talents, and contribute meaningfully to society."
     }
   ];
-
+  
   return (
     <section id="speeches" className="py-20 bg-card/30">
       <div className="container mx-auto px-4">
@@ -104,7 +107,11 @@ const SpeechesSection: React.FC = () => {
                         variant="outline" 
                         size="sm" 
                         className="flex items-center gap-2"
-                        onClick={() => window.open('https://www.youtube.com', '_blank')}
+                        onClick={() => {
+                          console.log(speech.link)
+                          window.open(speech.link, '_blank')
+                          
+                        }}
                       >
                         <PlayCircle className="h-4 w-4" />
                         Watch Video
@@ -146,9 +153,13 @@ const SpeechesSection: React.FC = () => {
                 Prof. Dr. Uzma Quraishi is available for speaking engagements on topics related to 
                 education, women's empowerment, and leadership development.
               </p>
-              <Button variant="glow" size="lg">
-                Contact for Speaking Opportunities
-              </Button>
+                          <Button
+              variant="glow"
+              size="lg"
+              onClick={() => window.location.href = "mailto:vc.office@lcwu.edu.pk?subject=Speaking Engagement Request"}
+            >
+              Contact for Speaking Opportunities
+            </Button> 
             </Card>
           </div>
         </div>

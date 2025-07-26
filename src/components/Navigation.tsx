@@ -25,7 +25,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onSectionChange 
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg gradient-primary"></div>
+            
             <span className="text-lg font-semibold text-foreground">Prof. Dr. Uzma Quraishi</span>
           </div>
 

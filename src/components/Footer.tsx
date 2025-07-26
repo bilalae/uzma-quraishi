@@ -107,11 +107,11 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-4 w-4 text-primary mr-2" />
-                  +92-42-99203801-9
+                  (042) 99203801
                 </div>
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 text-primary mr-2" />
-                  vc@lcwu.edu.pk
+                  vc.office@lcwu.edu.pk
                 </div>
               </div>
             </div>
@@ -121,7 +121,7 @@ const Footer: React.FC = () => {
           <div className="pt-8 border-t border-border">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-sm text-muted-foreground">
-                © 2024 Prof. Dr. Uzma Quraishi - Vice Chancellor, LCWU. All rights reserved.
+                © 2025 Prof. Dr. Uzma Quraishi - Vice Chancellor, LCWU. All rights reserved.
               </div>
               <div className="text-sm text-muted-foreground">
                 Empowering Women Through Education Since 1922

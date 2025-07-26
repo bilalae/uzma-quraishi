@@ -59,6 +59,7 @@ const BiographySection: React.FC = () => {
                   <div className="border-l-2 border-primary pl-6 pb-4">
                     <h4 className="font-semibold text-foreground">Doctoral Degree</h4>
                     <p className="text-muted-foreground">Ph.D. in Education</p>
+                    <p className="text-muted-foreground">Completed Postdoctoral Studies in Education</p>
                   </div>
                   <div className="border-l-2 border-primary/50 pl-6 pb-4">
                     <h4 className="font-semibold text-foreground">Master's Degree</h4>
