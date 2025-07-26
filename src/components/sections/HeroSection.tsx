@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown, Award, Users, BookOpen } from 'lucide-react';
-import heroImage from '@/assets/hero-image.jpg';
+import heroImage from '@/assets/prof-uzma-quraishi.jpg';
 
 interface HeroSectionProps {
   onSectionChange: (section: string) => void;

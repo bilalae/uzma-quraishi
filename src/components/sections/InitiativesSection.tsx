@@ -116,7 +116,11 @@ const InitiativesSection: React.FC = () => {
             </div>
             
             <div className="text-center">
-              <Button variant="glow" size="lg">
+              <Button 
+                variant="glow" 
+                size="lg"
+                onClick={() => window.open('https://hessa.utah.edu/lcwu/', '_blank')}
+              >
                 Learn More About HESSA Partnership
               </Button>
             </div>

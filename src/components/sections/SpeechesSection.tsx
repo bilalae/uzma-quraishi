@@ -100,13 +100,14 @@ const SpeechesSection: React.FC = () => {
                     </div>
                     
                     <div className="flex flex-col gap-2 lg:ml-6">
-                      <Button variant="outline" size="sm" className="flex items-center gap-2">
+                      <Button 
+                        variant="outline" 
+                        size="sm" 
+                        className="flex items-center gap-2"
+                        onClick={() => window.open('https://www.youtube.com', '_blank')}
+                      >
                         <PlayCircle className="h-4 w-4" />
                         Watch Video
-                      </Button>
-                      <Button variant="ghost" size="sm" className="flex items-center gap-2">
-                        <Download className="h-4 w-4" />
-                        Download Transcript
                       </Button>
                     </div>
                   </div>

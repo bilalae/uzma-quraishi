@@ -222,7 +222,12 @@ const ContactSection: React.FC = () => {
                   Vice Chancellor's Office is located at the main campus of Lahore College for Women University, 
                   easily accessible from Jail Road, Lahore.
                 </p>
-                <Button variant="outline" size="sm" className="w-full">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="w-full"
+                  onClick={() => window.open('https://maps.google.com/?q=Lahore+College+for+Women+University+Jail+Road+Lahore+Pakistan', '_blank')}
+                >
                   Get Directions
                 </Button>
               </Card>
